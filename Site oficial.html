@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+  
+  <style>
+  
+  body {
+      font-family: 'Libre Baskerville', serif;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Libre Baskerville', serif;
+    }
+  
+  .navigation a {
+  font-family: 'Libre Baskerville', serif; /* Aplicar a fonte ao menu */
+  font-size: 16px;
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+
+
+  
+    /* ... outros estilos ... */
+    .logo img {
+      max-width: 55px;
+      height: auto;
+    }
+  
+  /* Estilo para os dots (pontos de indicação) */
+.slick-dots li button:before {
+  color: white; /* Altere a cor para branco */
+}
+    /* Estilo para o carrossel */
+    .carousel {
+      width: 80%; /* Largura ajustável */
+      margin: 0 auto;
+      display: flex; /* Usar flexbox para alinhar as imagens lado a lado */
+      justify-content: center; /* Centralizar as imagens horizontalmente */
+    }
+
+
+/* Estilo para os dots (pontos de indicação) */
+.slick-dots {
+  position: absolute;
+  bottom: -50px; /* Ajuste conforme necessário */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Ajuste a largura do carrossel */
+.carousel {
+  width: 100%; /* Largura total da página */
+  margin: 0; /* Remova a margem */
+}
+
+/* Remova a margem das imagens */
+.carousel img {
+  max-width: 100%;
+  height: auto;
+  margin: 0; /* Remova a margem */
+}
+
+
+
+/* Ajustar a posição das setas */
+.slick-prev {
+  top: auto;
+  bottom: -60px; /* Posicione abaixo da imagem */
+  left: calc(50% - 185px); /* Posicione a primeira seta mais à esquerda */
+}
+
+.slick-next {
+  top: auto;
+  bottom: -60px; /* Posicione abaixo da imagem */
+  right: calc(50% - 185px); /* Posicione a segunda seta mais à direita */
+}
+
+
+     
+    /* Estilo para cada slide do carrossel */
+
+    
+
+    /* Estilo para cada slide do carrossel */
+    .carousel img {
+      max-width: 100%;
+      height: auto;
+      margin: 0 10px; /* Espaço entre as imagens */
+       box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5); /* Aumentei o desfoque e a opacidade */
+    }
+    
+body {
+      margin: 0;
+      background-color: #2C3E50; /* Cinza grafite */
+    }
+
+    .header {
+      background-color: #000;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navigation {
+      margin-top: 10px;
+    }
+
+    .navigation a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+.footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer .navigation {
+  margin-top: 10px;
+}
+
+.footer .navigation a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+    .main-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 0vh; 
+      margin-top: 350px;
+      /* Ajuste a altura conforme necessário */
+    }
+
+   
+
+    .input-container label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .input-container input[type="text"],
+    .input-container input[type="email"],
+    .input-container button[type="submit"] {
+      width: 90%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .input-container button[type="submit"] {
+      background-color: #000;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    
+   /* Estilos para a faixa preta */
+.bottom-banner {
+  background-color: black;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  margin-top: -30px; /* Ajuste esta margem para determinar a distância entre o carrossel e a faixa */
+} 
+   
+   /*Fauxa de imagem aqui */
+   
+   .bottom-img {
+     width: 100%;
+     text-align: center;
+     margin-top: 5px;
+   }
+    
+    .bottom-img img {
+  max-width: 100%;
+  height: auto;
+}
+   
+      /*Fauxa de imagem aqui */ 
+      
+      
+      
+      /* Estilos para a faixa de imagem */
+.bottom-video {
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 3px 0;
+  margin-top: 5
+}
+
+/* Estilos para o vídeo do YouTube */
+.bottom-banner iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+    
+    
+    
+    /* Estilo para o botão flutuante do WhatsApp */
+.whatsapp-button {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-button img {
+  width: 50px; /* Ajuste o tamanho conforme necessário */
+  height: 50px; /* Ajuste o tamanho conforme necessário */
+}
+    
+    /* Estilos para o botão flutuante do WhatsApp */
+
+    
+
+    /* ... outros estilos ... */
+  </style>
+</head>
+<body>
+  
+   <div class="header">
+    <div class="logo">
+      <img src="https://telegra.ph/file/23af3a4cb7998d12f953b.jpg" alt="Logotipo do Meu Site">
+    </div>
+    <div class="navigation">
+     <a href="#">INICIO</a>
+         <a href="lista_produtos.html">LISTA DE PRODUTOS</a>
+      <a href="#">CONTATO</a>
+    </div>
+  </div>
+ 
+ 
+  <!--imagens de link aqui -->
+ 
+  <div class="carousel autoplay">
+        <div><img src="https://telegra.ph/file/855bd6a4ce4aa051f6244.jpg" alt="js" /></div>
+    <div><img src="https://telegra.ph/file/35b80d239ce59a3359074.jpg" alt="java" /></div>
+    <div><img src="https://telegra.ph/file/3edd85bfa01f8bd50ebd9.jpg" alt="python"/></div>
+    <div><img src="https://telegra.ph/file/471df2098822cc3d6a1f7.jpg" alt="kotlin" /></div>
+    <div><img src="https://telegra.ph/file/b0ba8edd1b7aa8a8a4a19.jpg" alt="scala" /></div>
+    <div><img src="https://telegra.ph/file/1270dfd778e24258eb372.jpg" alt="C#" /></div>
+    <div><img src="https://telegra.ph/file/a6d6b2b1cf83b898c05be.jpg" alt="PHP" /></div>
+    <div><img src="https://telegra.ph/file/a380821c977c371637fdb.jpg" alt="dotnet" /></div>
+   
+  <div><img src="https://telegra.ph/file/b86dea33d789b8d970257.jpg" alt="outra-nova-imagem" /></div>
+  
+    <div><img src="https://telegra.ph/file/73538429a0ecb28d901d1.jpg" alt="outra-nova-imagem" /></div>
+  
+  </div>
+  
+ <!-- Faixa preta abaixo do carrossel -->
+  <div class="bottom-banner">
+    <!-- Conteúdo da faixa preta aqui -->
+  </div>
+  
+  <div class="bottom-img">
+  <a href="https://escritorio.zyone.com.br/cadastro#?id=jarlison">
+    <img src="top.png" alt="Imagem da Faixa">
+  </a>
+</div>
+
+
+<div class="bottom-video">
+  <!-- Conteúdo da faixa de imagem aqui -->
+</div>
+
+<!-- Vídeo do YouTube abaixo da faixa de imagem -->
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/PMPToYsn5kI" frameborder="0" allowfullscreen></iframe>
+
+
+  
+
+      
+      
+      
+    </div>
+  </div>
+ 
+  
+      <!-- Seu formulário aqui -->
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2023 DarkMarket. Todos os direitos reservados.
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.autoplay').slick({
+        dots:true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+    });
+  </script>
+  
+  
+  <!-- Botão flutuante do WhatsApp -->
+
+<div class="whatsapp-button">
+  <a href="https://api.whatsapp.com/send?phone=5593991786584&text=Tenho%20interesse%20nesse%20produto%2C%20ele%20ainda%20está%20disponível%3F" target="_blank">
+    <img src="zapzap.png" alt="WhatsApp">
+  </a>
+</div>
+  
+  
+</body>
+</html>
